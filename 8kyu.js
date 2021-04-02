@@ -47,3 +47,15 @@ function countSheeps (arrayOfSheep){
 //         numOfSheep++;
 //     }
 // }                    // Values in array are Booleans not strings; therefore, no quotes are necessary
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+// https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/javascript
+
+const humanYearsCatYearsDogYears = function(humanYears){
+    if (humanYears == 1) return [1, 15, 15]
+    if (humanYears == 2) return [2, 24, 24]
+    return [humanYears, ((humanYears - 2) * 4) + 24, ((humanYears - 2) * 5) + 24]
+}
