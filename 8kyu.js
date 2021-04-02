@@ -59,3 +59,18 @@ const humanYearsCatYearsDogYears = function(humanYears){
     if (humanYears == 2) return [2, 24, 24]
     return [humanYears, ((humanYears - 2) * 4) + 24, ((humanYears - 2) * 5) + 24]
 }
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+// https://www.codewars.com/kata/5a00e05cc374cb34d100000d/train/javascript
+
+function reverseSeq (n) {
+
+    let array = [];
+
+    for (n; n >= 1; n--){
+      array.push(n)
+    }
+    return array;
+
+  };
