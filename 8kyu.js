@@ -11,3 +11,39 @@
     }
 
     // (miles / gallon) * (kilometer / miles) * (1 gallon / 1 liter)
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+// Counting Sheep Practice Kata
+
+// https://www.codewars.com/kata/54edbc7200b811e956000556/solutions
+
+let arrayOfSheep = [true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  false,
+    true,  false, false, true ,
+    true,  true,  true,  false ,
+    false, false, true,  true];
+
+
+
+function countSheeps (arrayOfSheep){
+    let numOfSheep = 0;
+    for(let i = 0; i < arrayOfSheep.length; i++){
+        if (arrayOfSheep[i] === true){
+            numOfSheep++;
+            console.log(`There's a sheep in the ${i+1}th position`);
+        }
+    }  
+    return `In total there are ${numOfSheep} sheep`;
+}
+
+// Made mistake in for loop initially 
+
+// for(let i = 0; i < arrayOfSheep.length; i++){
+//     if (arrayOfSheep[i] === "true"){
+//         numOfSheep++;
+//     }
+// }                    // Values in array are Booleans not strings; therefore, no quotes are necessary
