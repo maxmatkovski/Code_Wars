@@ -105,3 +105,14 @@ function descendingOrder(n){
 }
   /////////////////////////////////////////////////////////////////////////////////////
 
+// https://www.codewars.com/kata/554b4ac871d6813a03000035/solutions/javascript
+
+function highAndLow(numberList) {
+  const arr = numberList.split(" ").sort(function (a, b) {
+    return a - b;
+  });
+  return `${arr[arr.length - 1]} ${arr[0]}`;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+
