@@ -74,3 +74,29 @@ function reverseSeq (n) {
     return array;
 
   };
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+//https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/javascript
+// Solution works but doesn't pass all the tests. There's a better way to do it, but still good job
+function descendingOrder(num){
+
+    let nums = [];
+    while(num){
+        const last = num % 10;
+        nums.unshift(last);
+        num = Math.floor(num / 10);
+    }
+
+    nums.sort().reverse();
+
+    let number = "";
+    for (let i = 0; i < nums.length; i++){
+        number = `${number}${nums[i]}`;
+    }
+    return number;
+};
+
+  /////////////////////////////////////////////////////////////////////////////////////
+
