@@ -98,5 +98,10 @@ function descendingOrder(num){
     return number;
 };
 
+
+
+function descendingOrder(n){
+    return parseInt(String(n).split('').sort().reverse().join(''));
+}
   /////////////////////////////////////////////////////////////////////////////////////
 
